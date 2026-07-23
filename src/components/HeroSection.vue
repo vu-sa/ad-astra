@@ -87,7 +87,7 @@ onUnmounted(() => {
         <div
           class="text-5xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-walsheim-hero text-primary mb-6 sm:mb-8 lg:mb-10 leading-none tracking-tight drop-shadow-lg"
         >
-          09.05
+          09.04
         </div>
 
         <a

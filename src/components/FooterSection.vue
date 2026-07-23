@@ -10,7 +10,7 @@ const { t } = useTranslations()
     <div class="footer-container">
       <div class="footer-content">
         <div class="copyright">
-          <p>&copy; VU SA 2025</p>
+          <p>&copy; VU SA 2026</p>
         </div>
         <div class="social-links">
           <a

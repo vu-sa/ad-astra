@@ -87,15 +87,15 @@ const handleWheel = (event: WheelEvent) => {
 // Get current time in Vilnius timezone
 const getCurrentVilniusTime = () => {
   const now = new Date()
-  const vilniusTime = new Date(now.toLocaleString("en-US", {timeZone: "Europe/Vilnius"}))
+  const vilniusTime = new Date(now.toLocaleString('en-US', { timeZone: 'Europe/Vilnius' }))
   return vilniusTime.getHours() * 60 + vilniusTime.getMinutes()
 }
 
 const nowMinutes = ref<number>(getCurrentVilniusTime())
 
-// Event window on September 5, 2025 from 13:00 until 22:00 (Vilnius time, EEST UTC+03)
-const eventStart = new Date('2026-09-05T13:00:00+03:00')
-const eventEnd = new Date('2026-09-05T22:00:00+03:00')
+// Event window on September 4, 2026 from 13:00 until 22:00 (Vilnius time, EEST UTC+03)
+const eventStart = new Date('2026-09-04T13:00:00+03:00')
+const eventEnd = new Date('2026-09-04T22:00:00+03:00')
 
 const eventStatus = computed(() => {
   const now = currentInstant.value
@@ -169,7 +169,9 @@ onUnmounted(() => {
   >
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
       <div class="text-center max-w-4xl mx-auto">
-        <h2 class="text-4xl lg:text-5xl xl:text-6xl font-walsheim text-white mb-6 lg:mb-8 uppercase">
+        <h2
+          class="text-4xl lg:text-5xl xl:text-6xl font-walsheim text-white mb-6 lg:mb-8 uppercase"
+        >
           <span v-if="eventStatus === 'before'">{{ t.eventCountdown }}</span>
           <span v-else-if="eventStatus === 'during'">{{ t.currentEventTitle }}</span>
           <span v-else>{{ t.eventEnded }}</span>
@@ -180,37 +182,67 @@ onUnmounted(() => {
       <div class="mt-12 max-w-6xl mx-auto">
         <!-- Before Event: Countdown -->
         <div v-if="eventStatus === 'before' && timeUntilEvent" class="text-center">
-          <div class="grid gap-4 lg:gap-6 max-w-4xl mx-auto" :class="timeUntilEvent.days > 0 ? 'grid-cols-2 lg:grid-cols-4' : 'grid-cols-1 lg:grid-cols-3'">
+          <div
+            class="grid gap-4 lg:gap-6 max-w-4xl mx-auto"
+            :class="
+              timeUntilEvent.days > 0 ? 'grid-cols-2 lg:grid-cols-4' : 'grid-cols-1 lg:grid-cols-3'
+            "
+          >
             <div v-if="timeUntilEvent.days > 0" class="p-6 lg:p-8">
-              <div class="text-4xl lg:text-5xl font-bold text-primary mb-2">{{ timeUntilEvent.days }}</div>
-              <div class="text-white/70 text-sm lg:text-base uppercase font-medium">{{ t.days }}</div>
+              <div class="text-4xl lg:text-5xl font-bold text-primary mb-2">
+                {{ timeUntilEvent.days }}
+              </div>
+              <div class="text-white/70 text-sm lg:text-base uppercase font-medium">
+                {{ t.days }}
+              </div>
             </div>
             <div class="p-6 lg:p-8">
-              <div class="text-4xl lg:text-5xl font-bold text-primary mb-2">{{ timeUntilEvent.hours }}</div>
-              <div class="text-white/70 text-sm lg:text-base uppercase font-medium">{{ t.hours }}</div>
+              <div class="text-4xl lg:text-5xl font-bold text-primary mb-2">
+                {{ timeUntilEvent.hours }}
+              </div>
+              <div class="text-white/70 text-sm lg:text-base uppercase font-medium">
+                {{ t.hours }}
+              </div>
             </div>
             <div class="p-6 lg:p-8">
-              <div class="text-4xl lg:text-5xl font-bold text-primary mb-2">{{ timeUntilEvent.minutes }}</div>
-              <div class="text-white/70 text-sm lg:text-base uppercase font-medium">{{ t.minutes }}</div>
+              <div class="text-4xl lg:text-5xl font-bold text-primary mb-2">
+                {{ timeUntilEvent.minutes }}
+              </div>
+              <div class="text-white/70 text-sm lg:text-base uppercase font-medium">
+                {{ t.minutes }}
+              </div>
             </div>
             <div class="p-6 lg:p-8">
-              <div class="text-4xl lg:text-5xl font-bold text-primary mb-2">{{ timeUntilEvent.seconds }}</div>
-              <div class="text-white/70 text-sm lg:text-base uppercase font-medium">{{ t.seconds }}</div>
+              <div class="text-4xl lg:text-5xl font-bold text-primary mb-2">
+                {{ timeUntilEvent.seconds }}
+              </div>
+              <div class="text-white/70 text-sm lg:text-base uppercase font-medium">
+                {{ t.seconds }}
+              </div>
             </div>
           </div>
         </div>
 
         <!-- During Event: Current Events -->
         <div v-else-if="eventStatus === 'during'">
-          <div v-if="currentEvents.length > 0" class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
+          <div
+            v-if="currentEvents.length > 0"
+            class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8"
+          >
             <div
               v-for="(ev, idx) in currentEvents"
               :key="idx"
               class="p-6 lg:p-8 h-64 flex flex-col justify-center text-center relative"
             >
               <div class="relative z-10">
-                <p class="text-sm lg:text-base text-primary font-semibold mb-3 uppercase">{{ ev.time }}</p>
-                <h3 class="text-xl lg:text-2xl xl:text-3xl text-white font-walsheim font-bold mb-4 uppercase leading-tight">{{ ev.name }}</h3>
+                <p class="text-sm lg:text-base text-primary font-semibold mb-3 uppercase">
+                  {{ ev.time }}
+                </p>
+                <h3
+                  class="text-xl lg:text-2xl xl:text-3xl text-white font-walsheim font-bold mb-4 uppercase leading-tight"
+                >
+                  {{ ev.name }}
+                </h3>
                 <p class="text-white/70 text-base lg:text-lg">{{ ev.courtyard }}</p>
               </div>
             </div>
@@ -218,7 +250,9 @@ onUnmounted(() => {
 
           <div v-else class="text-center">
             <div class="p-8 lg:p-12 max-w-2xl mx-auto">
-              <div class="text-xl lg:text-2xl text-white/70 font-medium">{{ t.noCurrentEvent }}</div>
+              <div class="text-xl lg:text-2xl text-white/70 font-medium">
+                {{ t.noCurrentEvent }}
+              </div>
             </div>
           </div>
         </div>
@@ -226,12 +260,12 @@ onUnmounted(() => {
         <!-- After Event: Event Ended -->
         <div v-else class="text-center">
           <div class="p-8 lg:p-12 max-w-2xl mx-auto">
-            <div class="text-lg lg:text-2xl text-white/80 font-medium">{{ t.eventEndedMessage }}</div>
+            <div class="text-lg lg:text-2xl text-white/80 font-medium">
+              {{ t.eventEndedMessage }}
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 </template>
-
-
