@@ -38,7 +38,7 @@ const { sectionRef, isVisible } = useScrollAnimation()
               {{ t.facebookEventDesc }}
             </p>
             <a
-              href="https://fb.me/e/51BuEDqIE"
+              href="https://fb.me/e/6x1BuV2nZ"
               target="_blank"
               rel="noopener noreferrer"
               class="inline-flex items-center justify-center bg-gradient-to-r from-amber-400 to-amber-500 text-black px-8 py-4 rounded-xl font-semibold text-lg shadow-lg hover:shadow-amber-400/25 hover:from-amber-300 hover:to-amber-400 transform hover:scale-105 transition-all duration-300 group"
