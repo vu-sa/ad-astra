@@ -36,7 +36,7 @@ const translations = {
     scientificZone: 'Moksliniai pranešimai',
     scientificZoneDesc:
       'Studentai pristatys savo tyrimų darbus, projektus ir inovatyvius sprendimus. Puiki galimybė sužinoti, kokius mokslinius pasiekimus daro mūsų bendruomenės nariai.',
-    contactFair: 'Kontaktų mugė',
+    contactFair: ' Kontaktų mugė',
     contactFairDesc:
       'Susipažinkite su organizacijomis, įmonėmis ir iniciatyvomis, kurios siūlo praktikos vietas, darbo galimybes ir bendradarbiavimo projektus studentams.',
     discussionZone: 'Diskusijos',
@@ -82,11 +82,12 @@ const translations = {
     sarbiviusCourtyard: 'SARBIEVIJAUS KIEMAS',
     observatoryCourtyard: 'OBSERVATORIJOS KIEMAS',
     sirwydasCourtyard: 'SIRVYDO KIEMAS',
+    daukantasCourtyard: 'DAUKANTO KIEMAS',
     rectorLecture: 'VU REKTORIAUS PASKAITA',
     vuUpClose: 'VU ARTIMIAU: PADALINIŲ PANORAMA',
     studentLife: 'STUDENTAS(-Ė) IRGI ŽMOGUS: VISA TIESA APIE STUDENTIŠKĄ GYVENIMĄ',
-    networkingFair: 'KONTAKTŲ MUGĖ',
-    concert: 'KONCERTAS',
+    networkingFair: ' KONTAKTŲ MUGĖ',
+    concert: ' FC BASEBALL',
     studentsToStudentsPt1: 'STUDENTAI(-ĖS) STUDENTAMS(-ĖMS): MOKSLAS IR MOBILUMAS (PT.1)',
     timeToAct:
       "GANA SCROLL'INTI- LAIKAS VEIKTI: SUŽINOK, KAIP TU GALI PRISIDĖTI PRIE LIETUVOS SAUGUMO",
@@ -121,6 +122,19 @@ const translations = {
     hours: 'valandos',
     minutes: 'minutės',
     seconds: 'sekundės',
+    opening: ' Atidarymas',
+    disscusionCool: ' Diskusija: „Pakilimo taškas: Vilniaus universitetas“',
+    deaconTrivia: ' Padalinių atstovų (-іų) protų mūšis „Pažink savo žvaigždyną“',
+    concertKS: ' Kamanių šilelis',
+    danceAndmusic: ' VU Dainų ir šokių ansamblis',
+    ratilio: ' VU folkloro ansamblis „Ratilio“',
+    scientificTalks:
+      ' Studentų (-čių) mokslinės veiklos pristatymai „Jaunujų žvaigždžių laboratorija“',
+    workshops: ' Linoraižinio kūrybinės dirbtuvės',
+    jubilee: ' Interaktyvi veikla „Tarp mūsų - šviesmetis“',
+    discussionNP: ' Diskusija „Nuo kibirkšties iki pokyčio“',
+    chillZone: ' Chill zona',
+    workshopCV: ' Dirbtuvės „Pasiruošk sėkmei: nuo CV iki pirmo darbo“',
   },
   en: {
     subtitle: 'IN VILNIUS UNIVERSITY',
@@ -153,7 +167,7 @@ const translations = {
     scientificZone: 'Scientific Presentations',
     scientificZoneDesc:
       'Students will present their research work, projects and innovative solutions. A great opportunity to learn about the scientific achievements of our community members.',
-    contactFair: 'Contact Fair',
+    contactFair: ' Contact Fair',
     contactFairDesc:
       'Meet organizations, companies and initiatives that offer internships, job opportunities and collaboration projects for students.',
     discussionZone: 'Discussions',
@@ -183,6 +197,7 @@ const translations = {
     partnershipText:
       "Want to become a partner? Contact us and let's create a great event together!",
     contactEmail: 'adastra@vusa.lt',
+    opening: 'Opening',
     organizatoriaiTitle: 'Organizers',
     // Teams links section
     teamsLinksTitle: 'Interpretation',
@@ -198,11 +213,12 @@ const translations = {
     sarbiviusCourtyard: 'M. K. SARBIEVIUS COURTYARD',
     observatoryCourtyard: 'ASTRONOMICAL OBSERVATORY COURTYARD',
     sirwydasCourtyard: 'KONSTANTINAS SIRVYDAS COURTYARD',
+    daukantasCourtyard: 'SIMONAS DAUKANTAS COUNRTYARD',
     rectorLecture: "VU RECTOR'S LECTURE",
     vuUpClose: 'VU UP CLOSE: A PANORAMA OF FACULTIES',
     studentLife: 'STUDENT IS ALSO A HUMAN: THE WHOLE TRUTH ABOUT STUDENT LIFE',
-    networkingFair: 'NETWORKING FAIR',
-    concert: 'CONCERT',
+    networkingFair: ' NETWORKING FAIR',
+    concert: ' FC Baseball',
     studentsToStudentsPt1: 'STUDENTS TO STUDENTS: RESEARCH AND EXCHANGE (PT.1)',
     timeToAct:
       "ENOUGH SCROLLING- TIME TO ACT: FIND OUT HOW YOU CAN CONTRIBUTE TO LITHUANIA'S SECURITY",
@@ -237,6 +253,18 @@ const translations = {
     hours: 'hours',
     minutes: 'minutes',
     seconds: 'seconds',
+    disscusionCool: ' Discussion "Launch point: Vilnius university"',
+    deaconTrivia: ' Quiz Battle of Faculty Representatives "Discover Your Constellation"',
+    concertKS: ' Kamanių šilelis',
+    danceAndmusic: ' VU Song and Dance Ensemble',
+    ratilio: ' VU Folk Ensemble "Ratilio"',
+    scientificTalks:
+      ' Studentų (-čių) mokslinės veiklos pristatymai „Jaunujų žvaigždžių laboratorija“',
+    workshops: ' Linoraižinio kūrybinės dirbtuvės',
+    jubilee: ' Interaktyvi veikla „Txarp mūsų - šviesmetis“',
+    discussionNP: ' Diskusija „Nuo kibirkšties iki pokyčio“',
+    chillZone: ' Chill Zone',
+    workshopCV: ' Workshop "Get ready for success: from CV to your first job"',
   },
 }
 

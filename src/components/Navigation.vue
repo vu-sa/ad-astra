@@ -11,9 +11,9 @@ const activeSection = ref('')
 const navigationItems = computed(() => [
   { id: 'hero', label: t.value.navHome, href: '#hero' },
   { id: 'current-events', label: t.value.navCurrentEvent, href: '#current-events' },
-  // { id: 'detailed-program', label: t.value.navProgram, href: '#detailed-program' },
-  // { id: 'map', label: t.value.navMap, href: '#map' },
-  // { id: 'teams-links', label: t.value.navInterpretation, href: '#teams-links' },
+  { id: 'detailed-program', label: t.value.navProgram, href: '#detailed-program' },
+  { id: 'map', label: t.value.navMap, href: '#map' },
+  { id: 'teams-links', label: t.value.navInterpretation, href: '#teams-links' },
   { id: 'event-info', label: t.value.navEvent, href: '#event-info' },
   { id: 'about', label: t.value.navAbout, href: '#about' },
   { id: 'why-ad-astra', label: t.value.navWhy, href: '#why-ad-astra' },

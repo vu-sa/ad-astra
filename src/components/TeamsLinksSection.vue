@@ -6,8 +6,9 @@ const { t } = useTranslations()
 const { sectionRef, isVisible } = useScrollAnimation()
 
 // TODO: Replace placeholder links with actual Teams meeting URLs if provided
-const vuDidysisKiemasUrl = 'https://teams.microsoft.com/l/meetup-join/19%3ameeting_MTgxZDljYTUtMDI2Zi00YzQ3LWE4NmQtNDdhY2QxNzE5ZmYz%40thread.v2/0?context=%7b%22Tid%22%3a%2282c51a82-548d-43ca-bcf9-bf4b7eb1d012%22%2c%22Oid%22%3a%22926129e3-55f9-4bb4-a1e8-9000e4ab6ccd%22%7d'
-const sarbievijausKiemasUrl = 'https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZTNjMTU0MjAtMmQ4ZS00ZWNiLTlhMjMtYWM2ZTE4NmQxZWE1%40thread.v2/0?context=%7b%22Tid%22%3a%2282c51a82-548d-43ca-bcf9-bf4b7eb1d012%22%2c%22Oid%22%3a%22926129e3-55f9-4bb4-a1e8-9000e4ab6ccd%22%7d'
+const vuDidysisKiemasUrl = 'https://teams.microsoft.com/meet/311027672506730?p=Sw9pqEKIqziAZXcLZ3'
+const sarbievijausKiemasUrl =
+  'https://teams.microsoft.com/meet/324305468763590?p=o3FS802lEPg9E6lL7L'
 </script>
 
 <template>
@@ -21,7 +22,7 @@ const sarbievijausKiemasUrl = 'https://teams.microsoft.com/l/meetup-join/19%3ame
       <div class="text-center">
         <div class="content-header mb-12">
           <h2 class="text-4xl lg:text-5xl xl:text-6xl font-walsheim text-white mb-6 uppercase">
-          {{ t.teamsLinksTitle }}
+            {{ t.teamsLinksTitle }}
           </h2>
           <div class="text-lg lg:text-xl font-light text-white mb-8">
             {{ t.teamsLinksSubtitle }}
@@ -36,8 +37,7 @@ const sarbievijausKiemasUrl = 'https://teams.microsoft.com/l/meetup-join/19%3ame
           rel="noopener noreferrer"
           class="border bg-black border-white/10 rounded-2xl p-8 text-center"
         >
-          <div class="mb-6">
-          </div>
+          <div class="mb-6"></div>
           <h3 class="text-2xl font-semibold text-primary mb-4">{{ t.vuGrandCourtyard }}</h3>
           <p class="text-lg text-gray-200 mb-6">{{ t.teamsJoinDescription }}</p>
           <a
@@ -53,7 +53,12 @@ const sarbievijausKiemasUrl = 'https://teams.microsoft.com/l/meetup-join/19%3ame
               stroke="currentColor"
               viewBox="0 0 24 24"
             >
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M17 8l4 4m0 0l-4 4m4-4H3"
+              />
             </svg>
           </a>
         </a>
@@ -64,8 +69,7 @@ const sarbievijausKiemasUrl = 'https://teams.microsoft.com/l/meetup-join/19%3ame
           rel="noopener noreferrer"
           class="border bg-black border-white/10 rounded-2xl p-8 text-center"
         >
-          <div class="mb-6">
-          </div>
+          <div class="mb-6"></div>
           <h3 class="text-2xl font-semibold text-primary mb-4">{{ t.sarbiviusCourtyard }}</h3>
           <p class="text-lg text-gray-200 mb-6">{{ t.teamsJoinDescription }}</p>
           <a
@@ -81,7 +85,12 @@ const sarbievijausKiemasUrl = 'https://teams.microsoft.com/l/meetup-join/19%3ame
               stroke="currentColor"
               viewBox="0 0 24 24"
             >
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M17 8l4 4m0 0l-4 4m4-4H3"
+              />
             </svg>
           </a>
         </a>
@@ -89,5 +98,3 @@ const sarbievijausKiemasUrl = 'https://teams.microsoft.com/l/meetup-join/19%3ame
     </div>
   </section>
 </template>
-
-

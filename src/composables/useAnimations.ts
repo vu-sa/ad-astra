@@ -62,7 +62,7 @@ export function useAnimations() {
     observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          const sectionIndex = sections.findIndex(section => section.ref.value === entry.target)
+          const sectionIndex = sections.findIndex((section) => section.ref.value === entry.target)
           if (sectionIndex !== -1) {
             sections[sectionIndex].visibility.value = true
           }
@@ -70,7 +70,7 @@ export function useAnimations() {
       })
     }, observerOptions)
 
-    sections.forEach(section => {
+    sections.forEach((section) => {
       if (section.ref.value) {
         observer!.observe(section.ref.value)
       }
@@ -78,6 +78,6 @@ export function useAnimations() {
   }
 
   return {
-    setupScrollAnimation
+    setupScrollAnimation,
   }
 }

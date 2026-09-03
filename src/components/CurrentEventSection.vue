@@ -14,35 +14,36 @@ const programSchedule = computed<CourtyardProgram[]>(() => [
   {
     courtyard: t.value.vuGrandCourtyard,
     events: [
-      { time: '13:00-13:50', event: t.value.rectorLecture },
-      { time: '14:00-15:15', event: t.value.vuUpClose },
-      { time: '15:20-16:00', event: t.value.studentLife },
-      { time: '16:00-18:00', event: t.value.networkingFair },
-      { time: '18:00-21:30', event: t.value.concert },
+      { time: '13:00-13:15', event: t.value.opening },
+      { time: '13:15-14:05', event: t.value.disscusionCool },
+      { time: '14:15-14:45', event: t.value.rectorLecture },
+      { time: '14:50-15:50', event: t.value.deaconTrivia },
+      { time: '16:00-16:30', event: t.value.concertKS },
+      { time: '16:30-18:30', event: t.value.networkingFair },
+      { time: '18:30-19:10', event: t.value.danceAndmusic },
+      { time: '19:30-20:15', event: t.value.ratilio },
+      { time: '20:30-21:30', event: t.value.concert },
     ],
   },
   {
     courtyard: t.value.sarbiviusCourtyard,
     events: [
-      { time: '14:00-14:55', event: t.value.studentsToStudentsPt1 },
-      { time: '15:00-15:45', event: t.value.timeToAct },
-      { time: '16:00-17:30', event: t.value.studentsToStudentsPt2 },
-      { time: '17:30-18:00', event: t.value.aiDiscussion },
+      { time: '13:15-14:45', event: t.value.scientificTalks },
+      { time: '15:00-16:00', event: t.value.workshops },
+      { time: '16:30-17:15', event: t.value.jubilee },
+      { time: '17:15-18:00', event: t.value.discussionNP },
     ],
   },
   {
     courtyard: t.value.observatoryCourtyard,
-    events: [
-      { time: '14:00-16:00', event: t.value.workshopCycle },
-      { time: '16:00-18:00', event: t.value.networkingFair },
-    ],
+    events: [{ time: '16:30-18:30', event: t.value.networkingFair }],
   },
   {
-    courtyard: t.value.sirwydasCourtyard,
+    courtyard: t.value.daukantasCourtyard,
     events: [
-      { time: '14:00-15:00', event: t.value.prepareForSuccess },
-      { time: '15:00-16:00', event: t.value.mobileBioclass },
-      { time: '16:00-18:00', event: t.value.boardGames },
+      { time: '13:00-15:00', event: t.value.chillZone },
+      { time: '15:00-15:45', event: t.value.workshopCV },
+      { time: '16:00-18:30', event: t.value.chillZone },
     ],
   },
 ])

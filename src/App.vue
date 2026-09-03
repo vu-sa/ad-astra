@@ -27,9 +27,9 @@ useBackgroundAnimations()
     <LanguageToggle />
     <HeroSection />
     <CurrentEventSection />
-    <!-- <DetailedProgramSection /> -->
-    <!-- <MapSection /> -->
-    <!-- <TeamsLinksSection /> -->
+    <DetailedProgramSection />
+    <MapSection />
+    <TeamsLinksSection />
     <EventInfoSection />
     <AboutSection />
 
