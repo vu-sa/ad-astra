@@ -6,9 +6,8 @@ const { t } = useTranslations()
 const { sectionRef, isVisible } = useScrollAnimation()
 
 // TODO: Replace placeholder links with actual Teams meeting URLs if provided
-const vuDidysisKiemasUrl = 'https://teams.microsoft.com/meet/311027672506730?p=Sw9pqEKIqziAZXcLZ3'
-const sarbievijausKiemasUrl =
-  'https://teams.microsoft.com/meet/324305468763590?p=o3FS802lEPg9E6lL7L'
+const vuDidysisKiemasUrl = 'https://teams.microsoft.com/meet/389955670344186?p=T0ScSI0xp9Utm1IzoF'
+const sarbievijausKiemasUrl = ''
 </script>
 
 <template>
